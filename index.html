@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web Basics Quiz</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="card">
+
+    <section id="selection-screen">
+      <h1>Choose an Exam</h1>
+      <p class="intro">Select one of the three exams to start.</p>
+      <div id="exam-buttons" class="exam-buttons"></div>
+    </section>
+
+    <section id="quiz-screen" aria-live="polite" hidden>
+      <header class="progress-head">
+        <span id="progress-text">Question 1 of 5</span>
+        <span id="timer" class="timer">1:00</span>
+        <span id="score-live">Score: 0</span>
+      </header>
+      <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div id="bar-fill"></div>
+      </div>
+      <div class="time-bar">
+        <div id="time-fill"></div>
+      </div>
+
+      <h1 id="question-text">Loading…</h1>
+      <div id="answers" class="answers"></div>
+    </section>
+
+    <section id="result-screen" hidden>
+      <h1>Your result</h1>
+      <p class="big-score"><span id="final-score">0</span><small> / <span id="final-total">0</span></small></p>
+      <p id="result-message" class="message"></p>
+      <ol id="review" class="review"></ol>
+      <div class="result-actions">
+        <button id="retry-btn" class="primary" type="button">Try This Exam Again</button>
+        <button id="home-btn" class="secondary" type="button">Choose Another Exam</button>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
