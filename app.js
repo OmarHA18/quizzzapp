@@ -1,7 +1,7 @@
 (function () {
   // For local development, run the backend on this computer at port 3000.
   // Replace this value with the deployed backend origin before publishing the frontend.
-  const API_BASE_URL = "http://localhost:3000";
+  const API_BASE_URL = "https://quiz-backend-nu-six.vercel.app";
   const DEFAULT_SECONDS_PER_QUESTION = 60;
   const NEXT_DELAY = 800;
 
